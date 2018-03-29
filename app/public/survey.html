@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+</head>
+<body>
+
+
+
+
+
+<div class="container">
+	 <div class="form-group">
+    <label for="exampleFormControlInput1">Whats your name?</label>
+    <input name="" type="text" class="form-control" id="name" placeholder="name@example.com">
+  </div>
+   <div class="form-group">
+    <label for="exampleFormControlInput1">Link to Photo Image (Required)</label>
+    <input name="" type="text" class="form-control" id="photo" placeholder="image URL">
+  </div>
+
+	  <h3>Question 1 </h3>
+    <h4>You like the color blue</h4>
+    <select data-placeholder="" class="chosen-select" id="question1" style="width: 300px;">
+  <option value="1">1 (Strongly Disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5 (Strongly Agree)</option>
+</select>
+
+<h3>Question 2 </h3>
+    <h4>You're always on time to class or work</h4>
+    <select data-placeholder="" class="chosen-selectl" id="question2" style="width: 300px;">
+  <option value="1">1 (Strongly Disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5 (Strongly Agree)</option>
+</select>
+
+<h3>Question 3 </h3>
+    <h4>You enjoy climbing trees</h4>
+    <select data-placeholder="" class="chosen-select" id="question3" style="width: 300px;">
+  <option value="1">1 (Strongly Disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5 (Strongly Agree)</option>
+</select>
+
+<h3>Question 4 </h3>
+    <h4>People always come to you for help</h4>
+    <select data-placeholder="" class="chosen-select" id="question4" style="width: 300px;">
+  <option value="1">1 (Strongly Disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5 (Strongly Agree)</option>
+</select>
+
+<h3>Question 5 </h3>
+    <h4>You like to watch Netflix</h4>
+    <select data-placeholder="" class="chosen-select" id="question5" style="width: 300px;">
+  <option value="1">1 (Strongly Disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5 (Strongly Agree)</option>
+</select>
+
+<h3>Question 6 </h3>
+    <h4>You can solve problems on your own</h4>
+    <select data-placeholder="" class="chosen-select" id="question6" style="width: 300px;">
+  <option value="1">1 (Strongly Disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5 (Strongly Agree)</option>
+</select>
+
+<h3>Question 7 </h3>
+    <h4>You will accomplish all of your goals this year</h4>
+    <select data-placeholder="" class="chosen-select" id="question7" style="width: 300px;">
+  <option value="1">1 (Strongly Disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5 (Strongly Agree)</option>
+</select>
+
+<h3>Question 8 </h3>
+    <h4>You enjoy being around cats</h4>
+    <select data-placeholder="" class="chosen-select" id="question8" style="width: 300px;">
+  <option value="1">1 (Strongly Disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5 (Strongly Agree)</option>
+</select>
+
+<h3>Question 9 </h3>
+    <h4>You enjoy being around dogs</h4>
+    <select data-placeholder="" class="chosen-selectl" id="question9" style="width: 300px;">
+  <option value="1">1 (Strongly Disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5 (Strongly Agree)</option>
+</select>
+
+<h3>Question 10 </h3>
+    <h4>You always run late to work or school</h4>
+    <select data-placeholder="" class="chosen-select" id="question10" style="width: 300px;">
+  <option value="1">1 (Strongly Disagree)</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5 (Strongly Agree)</option>
+</select>
+
+
+
+  
+
+<button class="btn btn-primary" type="submit" id="submit">Submit Results</button>
+
+</div>
+<div id="resultsModal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img style="width: 400px; height: 400px " id="matchImg" src="" alt="http://i0.kym-cdn.com/entries/icons/medium/000/023/880/doggo.jpg">
+        <h2 id="matchName"></h2>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript">
+  
+  $("#submit").on("click", function() {
+
+    function validateForm() {
+      var isValid = true;
+      $(".form-control").each(function() {
+        if($(this).val() === "") {
+          isValid = false;
+        }
+      });
+
+      $(".chosen-select").each(function() {
+        if($(this).val() === "") {
+          isValid = false;
+        }
+      });
+      return isValid;
+
+
+      
+    }
+
+    if(validateForm()) {
+      var userData = {
+          name: $("#name").val(),
+          photo: $("#photo").val(),
+          scores: [
+            $("#question1").val(),
+            $("#question2").val(),
+            $("#question3").val(),
+            $("#question4").val(),
+            $("#question5").val(),
+            $("#question6").val(),
+            $("#question7").val(),
+            $("#question8").val(),
+            $("#question9").val(),
+            $("#question10").val()
+
+
+          ]
+      };
+      var currentURL = window.location.origin;
+
+      $.post(currentURL + "/api/friends", userData, function(data) {
+        $("#matchName").text(data.name);
+        $("#matchImg").attr("src", data.photo);
+
+
+
+        $("#resultsModal").modal("toggle");
+
+
+        // alert("working");
+      });
+    }
+
+
+  });
+
+
+</script>
+
+
+</body>
+</html>
+
